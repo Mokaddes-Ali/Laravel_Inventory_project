@@ -1,20 +1,14 @@
 import './bootstrap';
+import '../css/app.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import Approute from './routes/approute';
-import Sidebar from './components/Sidebar';
-import TopBar from './components/Topbar';
-import Footer from './components/Footer';
+import Dash from './components/Dash';
 
 
 
 ReactDOM.createRoot(document.getElementById('app')).render(
     <>
-     {/* <BrowserRouter>
-     <Approute />
-    </BrowserRouter> */}
- <h1> Hello World </h1>
+   <Dash />
     </>
 );
