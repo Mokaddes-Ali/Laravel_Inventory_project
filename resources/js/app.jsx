@@ -9,7 +9,7 @@ import AppRoute from './Routes/AppRoute';
 
 ReactDOM.createRoot(document.getElementById('app')).render(
     <>
-    <AppRoute />
+  <h1 className="bg-black text-red-950 text-6xl">Hello</h1>
 
     </>
 );

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { FaBell, FaSearch, FaUserCircle } from 'react-icons/fa';
-import { MdDarkMode, MdLightMode,MdMenu } from 'react-icons/md'; 
+import { MdDarkMode, MdLightMode,MdMenu } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 import { TfiAlignRight,TfiAlignLeft } from "react-icons/tfi";
 import { FaExpand, FaCompress } from 'react-icons/fa';
@@ -35,7 +35,7 @@ const TopBar = ({ toggleSidebar, toggleLargeScreenSidebar, isLargeScreenOpen }) 
 
 
   const handleNotificationToggle = () => {
-    closeAll(); 
+    closeAll();
     setIsNotificationOpen(!isNotificationOpen);
   };
 
@@ -45,12 +45,12 @@ const TopBar = ({ toggleSidebar, toggleLargeScreenSidebar, isLargeScreenOpen }) 
   };
 
   const toggleSearch = () => {
-    closeAll(); 
+    closeAll();
     setIsSearchVisible(!isSearchVisible);
   };
 
   const handleCardToggle = () => {
-    closeAll(); 
+    closeAll();
     setIsCardVisible(!isCardVisible);
   };
 
@@ -65,7 +65,7 @@ const TopBar = ({ toggleSidebar, toggleLargeScreenSidebar, isLargeScreenOpen }) 
     setIsFullScreen(!isFullScreen);
   };
 
- 
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -84,7 +84,7 @@ const TopBar = ({ toggleSidebar, toggleLargeScreenSidebar, isLargeScreenOpen }) 
     };
   }, []);
   return (
-    <div className="flex items-center justify-between p-1 h-16 shadow dark:bg-black dark:text-white bg-green-100 " style={{ color: textColor }}>
+    <div className="flex items-center justify-between p-1 h-16 shadow dark:bg-black text-black bg-gray-900 ">
       {/* Mobile Sidebar Toggle Button */}
       <button onClick={toggleSidebar} className="focus:outline-none md:hidden ml-4">
         <MdMenu className="h-6 w-6" />
